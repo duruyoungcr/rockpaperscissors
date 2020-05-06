@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <header><h1>rock paper scissors</h1></header>
+    <div class="score-board">
+      <p class="badge" id="user-badge">user</p>
+      <p class="badge" id="comp-badge">comp</p>
+      <span id="user-score">0</span> : <span id="computer-score">0</span>
+    </div>
+    <div class="result">
+      <h1 id="result-text"></h1>
+    </div>
+    <div class="choices" id="choices">
+      <div class="choice" id="rock" data-id="0">
+        <img
+          data-id="0"
+          src="https://img.icons8.com/ios/50/000000/hand-rock.png"
+        />
+      </div>
+      <div class="choice" id="paper" data-id="1">
+        <img data-id="1" src="https://img.icons8.com/ios/50/000000/hand.png" />
+      </div>
+      <div class="choice" id="scissors" data-id="2">
+        <img
+          data-id="2"
+          src="https://img.icons8.com/ios/50/000000/hand-scissors.png"
+        />
+      </div>
+    </div>
+    <div class="action-message">
+      <p>Make your Choice !</p>
+    </div>
+    <button id="reset" onclick="resetScores()">Reset</button>
+    <footer>
+      <p>
+        Designed with <i class="fas fa-heart"></i> by
+        <a href="https://github.com/smartray" target="_blank">ray</a>
+      </p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
