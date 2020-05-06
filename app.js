@@ -1,7 +1,7 @@
 //variable declarations
 let userScore = 0;
 let compScore = 0;
-let compChoice = 0;
+let compChoice;
 let scores = {};
 const userSpan = document.getElementById("user-score");
 const compSpan = document.getElementById("computer-score");
@@ -20,7 +20,7 @@ choices.addEventListener("click", function (event) {
   //draw
   if (compChoice === userChoice) {
     result.className = "result-text";
-    result.innerText = "Draw !!!!";
+    result.innerText = "No one wins, its a Draw !!!!";
   }
   //computer choose rock & user chooses paper
   else if (compChoice == 0 && userChoice == 1) {
@@ -98,7 +98,7 @@ function updateScores(userScore, compScore) {
 function save(userScore, compScore) {
   scores = {
     user: userScore,
-    computer: compScore,
+    computer: compScore
   };
 }
 //set up
